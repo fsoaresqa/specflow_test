@@ -1,12 +1,19 @@
-﻿Feature: SpecFlowFeature1
-	Para poder passar o tempo
-	Como jogador
-	Quero poder começar um novo jogo
+﻿#language: pt-BR
+#encoding: iso-8859-1
 
-@mytag
-Scenario: Começo de novo jogo com sucesso
-	Given que o jogador queira jogar
-	When começo um novo jogo
-	Then vejo a seguinte mensagem na tela:
-       
-    
+
+Funcionalidade: Pesquisar wiki
+Como usuario 
+Quero pesquisar por um termo
+de modo que obtenha o resultado esperado
+
+Esquema do Cenario: pesquisar wiki
+Dado que acesse a pagina <url>
+E faça a pesquisa <pesquisa>
+Quando acionar o botão
+Então resultado é exibido <paginasucesso>
+E fechar pagina 
+
+Exemplos: 
+|url|pesquisa|paginasucesso|
+|"https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal"|"teste"|"Teste"|
