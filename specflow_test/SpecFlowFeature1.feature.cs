@@ -86,7 +86,7 @@ testRunner.And("fechar pagina", ((string)(null)), ((TechTalk.SpecFlow.Table)(nul
             "al\"", SourceLine=18)]
         public virtual void PesquisarWiki_HttpsPt_Wikipedia_OrgWikiWikipC3A9DiaPC3A1Gina_Principal()
         {
-            this.PesquisarWiki("\"https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal\"", "\"teste\"", "\"Teste\"", ((string[])(null)));
+            this.PesquisarWiki("\"https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal\"", "\"teste\"", "\"Testes\"", ((string[])(null)));
 #line hidden
         }
         
