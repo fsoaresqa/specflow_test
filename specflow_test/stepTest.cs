@@ -10,8 +10,6 @@ using System.Threading.Tasks;
 using TechTalk.SpecFlow;
 
 
-
-
 namespace specflow_test
 {
     [Binding]
@@ -23,6 +21,7 @@ namespace specflow_test
         private IWebDriver driver;
 
 
+        //testando
 
         [Given(@"que acesse a pagina ""(.*)""")]
         public void DadoQueAcesseAPagina(string url)
@@ -47,7 +46,6 @@ namespace specflow_test
             driver.FindElement(By.Id("searchButton")).Click();
 
         }
-
 
         [Then(@"resultado é exibido ""(.*)""")]
   
