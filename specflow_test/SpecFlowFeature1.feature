@@ -16,4 +16,4 @@ E fechar pagina
 
 Exemplos: 
 |url|pesquisa|paginasucesso|
-|"https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal"|"teste"|"Testes"|
+|"https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal"|"teste"|"Teste"|
