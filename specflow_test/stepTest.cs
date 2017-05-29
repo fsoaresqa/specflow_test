@@ -54,7 +54,7 @@ namespace specflow_test
             //Ler a mensagem para verificação da pagina que está logado
             string resultado = driver.FindElement(By.Id("firstHeading")).Text;
             //Comparar a variavel resultado com a mensagem da feature
-            Assert.IsTrue(resultado.Contains(paginasucesso));
+            Equals(resultado.Contains(paginasucesso));
         }
 
         [Then(@"fechar pagina")]

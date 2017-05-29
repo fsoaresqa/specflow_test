@@ -63,9 +63,9 @@ namespace specflow_test
             testRunner.CollectScenarioErrors();
         }
         
-        public virtual void PesquisarWiki(string url, string pesquisa, string paginasucesso, string[] exampleTags)
+        public virtual void PesquisarWikiTeste(string url, string pesquisa, string paginasucesso, string[] exampleTags)
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("pesquisar wiki", exampleTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("pesquisar wiki teste", exampleTags);
 #line 10
 this.ScenarioSetup(scenarioInfo);
 #line 11
@@ -82,11 +82,38 @@ testRunner.And("fechar pagina", ((string)(null)), ((TechTalk.SpecFlow.Table)(nul
             this.ScenarioCleanup();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("pesquisar wiki, \"https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_princip" +
-            "al\"", SourceLine=18)]
-        public virtual void PesquisarWiki_HttpsPt_Wikipedia_OrgWikiWikipC3A9DiaPC3A1Gina_Principal()
+        [TechTalk.SpecRun.ScenarioAttribute("pesquisar wiki teste, \"https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_p" +
+            "rincipal\"", SourceLine=18)]
+        public virtual void PesquisarWikiTeste_HttpsPt_Wikipedia_OrgWikiWikipC3A9DiaPC3A1Gina_Principal()
         {
-            this.PesquisarWiki("\"https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal\"", "\"teste\"", "\"Testes\"", ((string[])(null)));
+            this.PesquisarWikiTeste("\"https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal\"", "\"teste\"", "\"Teste\"", ((string[])(null)));
+#line hidden
+        }
+        
+        public virtual void PesquisarWikiTeste2(string url, string pesquisa, string paginasucesso, string[] exampleTags)
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("pesquisar wiki teste2", exampleTags);
+#line 22
+this.ScenarioSetup(scenarioInfo);
+#line 23
+testRunner.Given(string.Format("que acesse a pagina {0}", url), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
+#line 24
+testRunner.And(string.Format("faça a pesquisa {0}", pesquisa), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line 25
+testRunner.When("acionar o botão", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+#line 26
+testRunner.Then(string.Format("resultado é exibido {0}", paginasucesso), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
+#line 27
+testRunner.And("fechar pagina", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("pesquisar wiki teste2, \"https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_" +
+            "principal\"", SourceLine=30)]
+        public virtual void PesquisarWikiTeste2_HttpsPt_Wikipedia_OrgWikiWikipC3A9DiaPC3A1Gina_Principal()
+        {
+            this.PesquisarWikiTeste2("\"https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal\"", "\"teste2\"", "\"Teste2\"", ((string[])(null)));
 #line hidden
         }
         
